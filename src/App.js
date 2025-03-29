@@ -45,7 +45,6 @@ function App(){
 				user.posts.push(post);
 				count++;
 				for(let c=0; c<Comments.length; ++c){
-					//alert(Comments[c].postId);
 					if(Comments[c].postId==Messages[m].id){
 						post.comments.push(new Comment('Comment from '+Comments[c].email+':', Comments[c].body));
 					}
